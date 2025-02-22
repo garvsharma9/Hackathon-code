@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+.player-container {
+    background: white;
+    display: flex;
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.thumbnail img {
+    height: 200px;
+    border-radius: 10px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#seekSlider {
+    width: 100%;
+}
+
+#time-display {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.music-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#song-description{
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.button-image{
+    height: 20px;
+}

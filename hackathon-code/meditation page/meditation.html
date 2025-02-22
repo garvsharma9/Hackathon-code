@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Video Trailer Popup</title>
+    <link rel="stylesheet" href="story.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>
+            LIFE CHANGING POSTIVE REAL LIFE STORIES
+        </h1>
+
+    </div>
+
+
+    <section class="video-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img onclick="openModal('Aaj Bhi (Official Video) - Vishal Mishra ｜ Ali Fazal, Surbhi Jyoti ｜ VYRLOriginals.mp4')" class="thumbnail"src="/hackathon images/story 1.jpg">
+            </div>
+            <div class="video-info-grid">
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img onclick="openModal('Aaj Bhi (Official Video) - Vishal Mishra ｜ Ali Fazal, Surbhi Jyoti ｜ VYRLOriginals.mp4')"  class="thumbnail"src="/hackathon images/story 2.jpg">
+    
+            </div>
+            <div class="video-info-grid">
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img onclick="openModal('Aaj Bhi (Official Video) - Vishal Mishra ｜ Ali Fazal, Surbhi Jyoti ｜ VYRLOriginals.mp4')"  class="thumbnail"src="/hackathon images/story 3.jpg">
+    
+            </div>
+            <div class="video-info-grid">
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img onclick="openModal('Aaj Bhi (Official Video) - Vishal Mishra ｜ Ali Fazal, Surbhi Jyoti ｜ VYRLOriginals.mp4')"  class="thumbnail"src="/hackathon images/story 4.jpg">
+    
+            </div>
+            <div class="video-info-grid">
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img onclick="openModal('Aaj Bhi (Official Video) - Vishal Mishra ｜ Ali Fazal, Surbhi Jyoti ｜ VYRLOriginals.mp4')"  class="thumbnail"src="/hackathon images/story 5.jpg">
+    
+            </div>
+            <div class="video-info-grid">
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img onclick="openModal('Aaj Bhi (Official Video) - Vishal Mishra ｜ Ali Fazal, Surbhi Jyoti ｜ VYRLOriginals.mp4')"  class="thumbnail"src="/hackathon images/story 6.jpg">
+    
+            </div>
+            <div class="video-info-grid">
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+
+            <button class="close-btn" onclick="closeModal()">X</button>
+
+            <iframe id="videoIframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        // Function to open the modal with the selected video
+        function openModal(videoUrl) {
+            const modal = document.getElementById('videoModal');
+            const iframe = document.getElementById('videoIframe');
+            iframe.src = videoUrl; // Set iframe src to the video URL
+            modal.style.display = 'flex'; // Show the modal
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            const modal = document.getElementById('videoModal');
+            const iframe = document.getElementById('videoIframe');
+            iframe.src = ''; // Stop the video by clearing the iframe's src
+            modal.style.display = 'none'; // Hide the modal
+        }
+
+        // Close the modal if the user clicks outside of the video content
+        window.onclick = function(event) {
+            const modal = document.getElementById('videoModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        };
+    </script>
+</body>
+
+</html>
