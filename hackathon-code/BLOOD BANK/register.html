@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Registration</title>
+     <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8d7da;
+}
+.container {
+    display: flex;
+    width: 80%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.left-section {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+.left-section img {
+    max-width: 100%;
+    height: auto;
+}
+#demo{
+    size: 20px;
+}
+.right-section {
+    flex: 1.2;
+    background-color: #f08080;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+.radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.radio-group label {
+    margin-right: 10px;
+}
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkblue;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+     </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="blood2.jpg" alt="Blood Donation">
+        </div>
+        <div class="right-section">
+            <div class="register-box">
+                <h2 id="demo">Register</h2>
+                <form>
+                    <div class="radio-group"></div>
+
+                    <input type="text" placeholder="Donor Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="College" required>
+                    <input type="tel" placeholder="+91 **********" required>
+                    <input type="text" placeholder="Blood Group" required>
+
+                    <p>Already registered? <a href="login.html">Login!</a></p>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

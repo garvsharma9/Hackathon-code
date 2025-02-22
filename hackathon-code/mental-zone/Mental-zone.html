@@ -3,49 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Zone</title>
-    <link rel="icon" type="image/x-icon" href="logo.jpg">
-    <link rel="stylesheet" href="Healing-zone.css">
+    <title>Zencuary - Mindfulness</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 15px 50px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #008080;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .icons {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Hero Section with Background Image */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 85vh;
+            background: url('meditation.jpg') no-repeat center center/cover;
+            padding-left: 100px;
+            color: black;
+            background-size: 90% 100%;
+        }
+
+        .hero-text {
+            max-width: 45%;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #008080;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .journey-btn {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: #008080;
+            color: white;
+        }
+
+        /* Sidebar Icons */
+        .sidebar {
+            position: absolute;
+            right: 20px;
+            top: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            gap: 10px; 
+            margin-right: 98px;
+            margin-top: -109px;
+        }
+
+        .sidebar-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center images and text */
+            text-align: center;
+        }
+
+        .icon {
+            width: 135px;
+            height: 140px;
+            border-radius: 50%;
+            background-color: rgba(183, 144, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+       
+            
+        }
+
+        .icon img {
+            width: 80px;
+            height: 77px;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar-text {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 5px; /* Reduce space between text and image */
+        }
+
+        /* Testimonial Section */
+        .testimonial {
+            background-color: #d7f7f3;
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .testimonial-text {
+            font-size: 18px;
+            font-style: italic;
+            color: #444;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            gap: 10px;
+        }
+
+        .user-profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #ddd;
+            padding: 40px 10%;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 280px;
+            text-align: left;
+        }
+
+        .footer-section h3 {
+            color: #f39c12;
+            font-size: 20px;
+        }
+
+        .footer-section p, .footer-section a {
+            margin: 5px 0;
+            color: #bbb;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+            text-align: center;
+            font-size: 14px;
+            color: #bbb;
+        }
+    </style>
 </head>
 <body>
-    <div class="body-container">
-        <div class="heading">
-            <h1>Mental Zone</h1>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🌀 Sukhaayu</div>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="icons">
+            <span class="search-icon">🔍</span>
+            <span class="cart-icon">🛒</span>
         </div>
-        <div class="description">
-            <p>
-                Welcome to the Healing Zone, a sanctuary where you can escape the noise and find true relief. Feel the stress melt away as CERTIFIED healing sounds and binaural beats guide you to tranquility. Our AI-powered therapist tailors therapy to your unique emotional needs, while personalized success stories inspire hope. When you need human touch, we connect you to expert therapists for deeper care. In the Healing Zone, your mental well-being is our priority—find your peace, anytime, anywhere.
-            </p>
-            <p class="guideline">
-                GUIDELINES --> Sound healing is an ancient wellness practice for healing, relaxation, and self-care. A sound healing session involves lying down in a cozy and comfortable setting, closing our eyes, and focusing on sounds made by music instruments like chimes, gongs, and singing bowls.
-            </p>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>MENTAL ZONE</h1>
+            <p>Experience deep relaxation and mental clarity with our specially designed <b>NSDR sessions</b> to ease anxiety and improve sleep...</p>
+       
+            <p>Start your day with customized <b> Affirmations </b> that fill you with positivity, and unwind with <b>Guided meditations</b> that enhance focus and bring lasting peace. </p>
+
+            <p> Recharge, refocus, and find your calm effortlessly. ✨ </p>
+            <button class="journey-btn">Start Your Journey</button>
         </div>
-        <div class="buttons-container">
-            <div class="button-description">
-                <button class="meditation-zone-button">
-                    <a href="meditation.html" target="_blank">Guided  <br>Meditation zone</a>
-                </button>
-                <p>
-                    Inspirational healing stories <br> provide hope and motivation, showcasing real-lige <br> experiences of overcoming challenges. They help in <br> emotional recovery by fostering positivity and resilience.
-                </p>
-            </div>
-            <div class="button-description">
-                <button class="Affirmation-zone-button">
-                    <a href="Affirmation-zone.html" target="_blank">Affirmation<br>zone</a>   
-                </button>
-                <p>
-                    These sound frequencies <br>stimulate the brain promoting relaxation, focus, and deep <br> meditation. They are known to reduce stress, improve <br> sleep, and enhance overall well-being.
-                </p>
-            </div>
-            <div class="button-description">
-                <button class="yog-nidra-button">
-                    <a href="yog.html" target="_blank">NSDR and <br>Yog Nidra</a>
-                </button>
-                <p>
-                    soothing sounds like nature, chants, and soft <br> melodies help calm the mind and body. They assist <br> in reducting anxiety, balancing emotions, <br> and creating a peaceful atmosphere for healing.
-                </p>
-            </div>
+    </header>
+
+  
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <div class="icon"><img src="meditation.png" alt="Guided meditation"></div>
+            <p class="sidebar-text">Guided Meditation</p>
+        </div>
+        <div class="sidebar-item">
+            <div class="icon"><img src="affirmation.jpg" alt="Affirmations"></div>
+            <p class="sidebar-text">Affirmations</p>
+        </div>
+        <div class="sidebar-item">
+            <div class="icon"><img src="yog.png" alt="NSDR and YOG"></div>
+            <p class="sidebar-text">NSDR and YOG</p>
         </div>
     </div>
+
+   
+    <section class="testimonial">
+        <div class="testimonial-text">
+          
+       
+    <footer style="background-color: #1a1a1a; color: #ddd; padding: 40px 10%; font-family: 'Arial', sans-serif;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: flex-start;">
+            
+            <div style="flex: 1; min-width: 280px; text-align: left;">
+                <h3 style="color: #f39c12; font-size: 20px;">Our Address</h3>
+                <p style="margin: 5px 0;">NIT kurukshetra, 136119</p>
+                <p style="margin: 5px 0;">Email: <a href="sukhaayu.nit.ac.in" style="color: #f39c12; text-decoration: none;">contact@sukhaayu.com</a></p>
+                <p style="margin: 5px 0;">Phone: <a href="tel:+919876543210" style="color: #f39c12; text-decoration: none;">+91 98765 43210</a></p>
+            </div>
+            
+            <div style="flex: 1; min-width: 280px; text-align: left;">
+                <h3 style="color: #f39c12; font-size: 20px;">Meet Our Team</h3>
+                <p style="margin: 5px 0;"><strong></strong>Devanshu Jain</p>
+                <p style="margin: 5px 0;"><strong></strong>Shruti Jain</p>
+                <p style="margin: 5px 0;"><strong></strong>Harshit Mishra </p>
+                <p style="margin: 5px 0;"><strong></strong>Garv Sharma</p>
+               
+            </div>
+            
+            <div style="flex: 1; min-width: 280px; text-align: left;">
+                <h3 style="color: #f39c12; font-size: 20px;">Follow Us</h3>
+                <p>
+                    <a href="#" style="color: #f39c12; text-decoration: none; margin-right: 15px; font-size: 16px;">Facebook</a>
+                    <a href="#" style="color: #f39c12; text-decoration: none; margin-right: 15px; font-size: 16px;">Twitter</a>
+                    <a href="#" style="color: #f39c12; text-decoration: none; font-size: 16px;">Instagram</a>
+                </p>
+            </div>
+            
+        </div>
+        
+        <div style="margin-top: 30px; border-top: 1px solid #444; padding-top: 15px; text-align: center; font-size: 14px; color: #bbb;">
+            <p>&copy; 2025 SUKHAAYU. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script>
+       
+
+        document.querySelector(".shop-btn").addEventListener("click", function() {
+            alert("Redirecting to the shop...");
+        });
+
+        document.querySelector(".journey-btn").addEventListener("click", function() {
+            alert("Starting your mindfulness journey...");
+        });
+    </script>
+
 </body>
 </html>
