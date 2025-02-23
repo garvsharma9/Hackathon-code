@@ -1,0 +1,97 @@
+body {
+    background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg");
+    background-size: 100% 100%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: azure;
+}
+#intro{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.tips, .updates, .thoughts {
+    background: rgba(251, 251, 252, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#next_thought{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background : linear-gradient(to right,rgb(168, 249, 255),rgb(201, 239, 249));
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    border: none;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+#next_thought:hover{
+    background: linear-gradient(to right,#99a7f8,#e0d9f9);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.scrolling-tips {
+    height: 100px;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+.thoughts-container {
+    white-space: nowrap;
+    overflow: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    scrollbar-width: none;
+}
+.thought-card {
+    color: #0b0202;                        
+    display: inline-block;
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 430px;
+    white-space: wrap;
+    /* text-align: center; */
+}
+
+.thought-card:hover{
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+.thought-card img{
+    width:80%;
+    border-radius: 10px;
+}
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: rise linear infinite;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}

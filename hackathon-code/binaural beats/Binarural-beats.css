@@ -7,16 +7,74 @@ body {
     margin: 0;
     background-color: #f7f7f7;
 }
-
-.player-container {
-    background: white;
+.navbar {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255) ;
+    padding: 15px 50px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    /* border-radius: 30px; */
+}
+h1 {
+    font-family: 'Poppins', sans-serif; /* Stylish modern font */
+    font-size: 2.5rem; /* Increase font size */
+    color: #333; /* Dark text for contrast */
+    background: linear-gradient(135deg, #ffeb3b, #ff9800); /* Gradient effect */
+    padding: 15px 25px; /* Better spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 5px 15px rgba(255, 193, 7, 0.5); /* Soft glowing effect */
+    display: inline-block; /* Ensures proper highlighting */
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: Roboto,Arial;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.logo{
+    
+}
+
+ .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+} 
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.player-container {
+    background-color: rgba(219, 219, 219, 0.63);
 
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10 px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1;
     text-align: center;
+    box-shadow: 2px 3px 10px black;
+    gap: 10px;
+    margin-right: 120px;
+    margin-left: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    
 }
 
 .thumbnail img {
@@ -26,6 +84,31 @@ body {
 
 .description {
     margin-top: 10px;
+}
+.description h2{
+    font-size: 20px;
+            font-weight: bold;
+            color: #4b4848;
+            /* Text color */
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+
+            /* Glowing effect */
+            text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff, 0 0 80px #00eaff;
+
+            animation: glow 1.5s infinite alternate;
+}
+
+ /* Animation for pulsing glow effect */
+ @keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff;
+    }
+
+    100% {
+        text-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff, 0 0 80px #00eaff;
+    }
 }
 
 .controls {
@@ -47,14 +130,31 @@ body {
 .music-container{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 #song-description{
     margin-left: 10px;
-    font-size: 13px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
 }
 
 .button-image{
     height: 20px;
+}
+ 
+.grid{
+    display: flex;
+    flex: 1;
+}
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(2px);
 }

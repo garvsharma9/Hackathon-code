@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zencuary - Mindfulness</title>
+    <title>Mental Zone</title>
     <style>
         /* General Styles */
         body {
@@ -98,8 +99,8 @@
             top: 200px;
             display: flex;
             flex-direction: column;
-            align-items: center; 
-            gap: 10px; 
+            align-items: center;
+            gap: 10px;
             margin-right: 98px;
             margin-top: -109px;
         }
@@ -107,8 +108,40 @@
         .sidebar-item {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center images and text */
+            align-items: center;
+            /* Center images and text */
             text-align: center;
+
+
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+            /* Text color */
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+
+            /* Glowing effect */
+            text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff, 0 0 80px #00eaff;
+
+            animation: glow 1.5s infinite alternate;
+
+        }
+
+        /* Animation for pulsing glow effect */
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff;
+            }
+
+            100% {
+                text-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff, 0 0 80px #00eaff;
+            }
+        }
+
+        .sidebar-item a {
+            text-decoration: none;
+            color: rgb(66, 62, 62);
         }
 
         .icon {
@@ -121,8 +154,8 @@
             justify-content: center;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
-       
-            
+
+
         }
 
         .icon img {
@@ -137,7 +170,8 @@
         .sidebar-text {
             font-size: 16px;
             font-weight: bold;
-            margin-top: 5px; /* Reduce space between text and image */
+            margin-top: 5px;
+            /* Reduce space between text and image */
         }
 
         /* Testimonial Section */
@@ -194,7 +228,8 @@
             font-size: 20px;
         }
 
-        .footer-section p, .footer-section a {
+        .footer-section p,
+        .footer-section a {
             margin: 5px 0;
             color: #bbb;
             text-decoration: none;
@@ -210,6 +245,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Navbar -->
@@ -232,85 +268,99 @@
     <header class="hero">
         <div class="hero-text">
             <h1>MENTAL ZONE</h1>
-            <p>Experience deep relaxation and mental clarity with our specially designed <b>NSDR sessions</b> to ease anxiety and improve sleep...</p>
-       
-            <p>Start your day with customized <b> Affirmations </b> that fill you with positivity, and unwind with <b>Guided meditations</b> that enhance focus and bring lasting peace. </p>
+            <p>Experience deep relaxation and mental clarity with our specially designed <b>NSDR sessions</b> to ease
+                anxiety and improve sleep...</p>
+
+            <p>Start your day with customized <b> Affirmations </b> that fill you with positivity, and unwind with
+                <b>Guided meditations</b> that enhance focus and bring lasting peace. </p>
 
             <p> Recharge, refocus, and find your calm effortlessly. ✨ </p>
             <button class="journey-btn">Start Your Journey</button>
         </div>
     </header>
 
-  
+
     <div class="sidebar">
         <div class="sidebar-item">
-            <a href="../meditation page/meditation.html">
+            <a href="../meditation page/meditation.html" target="_blank">
                 <div class="icon"><img src="meditation.png" alt="Guided meditation"></div>
                 <p class="sidebar-text">Guided Meditation</p>
             </a>
         </div>
         <div class="sidebar-item">
-            <div class="icon"><img src="affirmation.jpg" alt="Affirmations"></div>
-            <p class="sidebar-text">Affirmations</p>
+            <a href="../affirmation-zone page/Affirmation-zone.html" target="_blank">
+                <div class="icon"><img src="affirmation.jpg" alt="Affirmations"></div>
+                <p class="sidebar-text">Affirmations</p>
+
+            </a>
         </div>
         <div class="sidebar-item">
-            <div class="icon"><img src="yog.png" alt="NSDR and YOG"></div>
-            <p class="sidebar-text">NSDR and YOG</p>
+            <a href="../yog nidra zone/yog.html" target="_blank">
+                <div class="icon"><img src="yog.png" alt="NSDR and YOG"></div>
+                <p class="sidebar-text">NSDR and YOG</p>
+            </a>
         </div>
     </div>
 
-   
+
     <section class="testimonial">
         <div class="testimonial-text">
-          
-       
-    <footer style="background-color: #1a1a1a; color: #ddd; padding: 40px 10%; font-family: 'Arial', sans-serif;">
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: flex-start;">
-            
-            <div style="flex: 1; min-width: 280px; text-align: left;">
-                <h3 style="color: #f39c12; font-size: 20px;">Our Address</h3>
-                <p style="margin: 5px 0;">NIT kurukshetra, 136119</p>
-                <p style="margin: 5px 0;">Email: <a href="sukhaayu.nit.ac.in" style="color: #f39c12; text-decoration: none;">contact@sukhaayu.com</a></p>
-                <p style="margin: 5px 0;">Phone: <a href="tel:+919876543210" style="color: #f39c12; text-decoration: none;">+91 98765 43210</a></p>
-            </div>
-            
-            <div style="flex: 1; min-width: 280px; text-align: left;">
-                <h3 style="color: #f39c12; font-size: 20px;">Meet Our Team</h3>
-                <p style="margin: 5px 0;"><strong></strong>Devanshu Jain</p>
-                <p style="margin: 5px 0;"><strong></strong>Shruti Jain</p>
-                <p style="margin: 5px 0;"><strong></strong>Harshit Mishra </p>
-                <p style="margin: 5px 0;"><strong></strong>Garv Sharma</p>
-               
-            </div>
-            
-            <div style="flex: 1; min-width: 280px; text-align: left;">
-                <h3 style="color: #f39c12; font-size: 20px;">Follow Us</h3>
-                <p>
-                    <a href="#" style="color: #f39c12; text-decoration: none; margin-right: 15px; font-size: 16px;">Facebook</a>
-                    <a href="#" style="color: #f39c12; text-decoration: none; margin-right: 15px; font-size: 16px;">Twitter</a>
-                    <a href="#" style="color: #f39c12; text-decoration: none; font-size: 16px;">Instagram</a>
-                </p>
-            </div>
-            
-        </div>
-        
-        <div style="margin-top: 30px; border-top: 1px solid #444; padding-top: 15px; text-align: center; font-size: 14px; color: #bbb;">
-            <p>&copy; 2025 SUKHAAYU. All Rights Reserved.</p>
-        </div>
-    </footer>
-    
 
-    <script>
-       
 
-        document.querySelector(".shop-btn").addEventListener("click", function() {
-            alert("Redirecting to the shop...");
-        });
+            <footer
+                style="background-color: #1a1a1a; color: #ddd; padding: 40px 10%; font-family: 'Arial', sans-serif;">
+                <div style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: flex-start;">
 
-        document.querySelector(".journey-btn").addEventListener("click", function() {
-            alert("Starting your mindfulness journey...");
-        });
-    </script>
+                    <div style="flex: 1; min-width: 280px; text-align: left;">
+                        <h3 style="color: #f39c12; font-size: 20px;">Our Address</h3>
+                        <p style="margin: 5px 0;">NIT kurukshetra, 136119</p>
+                        <p style="margin: 5px 0;">Email: <a href="sukhaayu.nit.ac.in"
+                                style="color: #f39c12; text-decoration: none;">contact@sukhaayu.com</a></p>
+                        <p style="margin: 5px 0;">Phone: <a href="tel:+919876543210"
+                                style="color: #f39c12; text-decoration: none;">+91 98765 43210</a></p>
+                    </div>
+
+                    <div style="flex: 1; min-width: 280px; text-align: left;">
+                        <h3 style="color: #f39c12; font-size: 20px;">Meet Our Team</h3>
+                        <p style="margin: 5px 0;"><strong></strong>Devanshu Jain</p>
+                        <p style="margin: 5px 0;"><strong></strong>Shruti Jain</p>
+                        <p style="margin: 5px 0;"><strong></strong>Harshit Mishra </p>
+                        <p style="margin: 5px 0;"><strong></strong>Garv Sharma</p>
+
+                    </div>
+
+                    <div style="flex: 1; min-width: 280px; text-align: left;">
+                        <h3 style="color: #f39c12; font-size: 20px;">Follow Us</h3>
+                        <p>
+                            <a href="#"
+                                style="color: #f39c12; text-decoration: none; margin-right: 15px; font-size: 16px;">Facebook</a>
+                            <a href="#"
+                                style="color: #f39c12; text-decoration: none; margin-right: 15px; font-size: 16px;">Twitter</a>
+                            <a href="#" style="color: #f39c12; text-decoration: none; font-size: 16px;">Instagram</a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div
+                    style="margin-top: 30px; border-top: 1px solid #444; padding-top: 15px; text-align: center; font-size: 14px; color: #bbb;">
+                    <p>&copy; 2025 SUKHAAYU. All Rights Reserved.</p>
+                </div>
+            </footer>
+
+
+            <script>
+
+
+                document.querySelector(".shop-btn").addEventListener("click", function () {
+                    alert("Redirecting to the shop...");
+                });
+
+                document.querySelector(".journey-btn").addEventListener("click", function () {
+                    alert("Starting your mindfulness journey...");
+                });
+            </script>
 
 </body>
+
 </html>
